@@ -1,10 +1,4 @@
-# bash-cheatsheet
+# cheatsheets
 
-## word caount without space
-A file
+- [bash](bash.md)
 
-`tr -d '[:space:] ' < myfile.json | wc`
-
-All files in a directory
-
-`for f in ./*; do cat $f | tr -d '[:space:] ' | wc; done`
