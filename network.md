@@ -1,9 +1,29 @@
 # Network
 
+## Common commands
+
+```
+nslookup <damain-name>
+#reverse lookup
+nslookup <ip>
+
+host <domain-name>
+host <domain-name> <use-this-dns (IP)>
+host -t <type of record e.g. ns, mx> <domain name e.g. smtp.tasitii.com >
+# everything
+host -a <domain-name>
+
+dig
+```
+
 Display resolver cache - current name to ip list
 `ipconfig /displaydns`
 
+## Name lookup
 `nslookup www.google.com`
+
+Reverse lookup
+`nslookup 123.231.1.5`
 
 - check order at */etc/host.conf* (linux)
 
