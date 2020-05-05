@@ -1,5 +1,11 @@
 # bash-cheatsheet
 
+## copy from remote machine
+```
+#scp <remote-machine>:<full path to file> <local path>
+scp a.b.c:/mnt/jenkins/conf* .
+```
+
 ## word caount without space
 A file
 
