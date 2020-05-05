@@ -4,6 +4,9 @@
 ```
 #scp <remote-machine>:<full path to file> <local path>
 scp a.b.c:/mnt/jenkins/conf* .
+
+# copu directory
+scp -r <remote-machine>:/mnt/jenkins <destination-dir>
 ```
 
 ## word caount without space
