@@ -14,6 +14,9 @@ host -t <type of record e.g. ns, mx> <domain name e.g. smtp.tasitii.com >
 host -a <domain-name>
 
 dig
+
+# list routing rules
+iptables
 ```
 
 Display resolver cache - current name to ip list
