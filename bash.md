@@ -17,3 +17,10 @@ A file
 All files in a directory
 
 `for f in ./*; do cat $f | tr -d '[:space:] ' | wc; done`
+
+# volume
+```
+lsblk
+
+df
+```
