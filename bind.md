@@ -95,3 +95,17 @@ nslookup test.domain
 nslookup localhost
 nslookup 172.16.1.2
 ```
+### sample zone file
+
+```
+$TTL 3600
+@ IN SOA ns1.test.domain. root (1 3H 15M 1W 1D)
+
+		IN	NS	ns1
+		IN	MX	10	mx1.mydomain.com
+		IN	MX	50	mx2.mydomain.com
+
+ns1		IN	A	10.0.0.4
+www	60	IN	A	172.16.1.2
+portal		IN	CNAME	www.test.domain.
+```
