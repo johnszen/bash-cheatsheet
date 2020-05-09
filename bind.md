@@ -57,3 +57,32 @@ systemctl | grep named
 # voila! it is there
 # named.service
 ```
+
+### working with bind
+
+```
+sudo tail -f /var/log/messages
+```
+
+```
+sudo systemctl status named
+
+sudo rndc status
+
+sudo systemctl restart named
+
+# check named.conf syntax and etc
+sudo named-checkconf
+```
+
+Copy sample from doc
+```
+cp /usr/share/doc/bind-9.11.4/sample/etc/named.conf /etc/named.conf
+```
+
+test
+```
+nslookup www.google.com localhost
+
+nslookup localhost localhost
+```
