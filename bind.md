@@ -83,6 +83,15 @@ cp /usr/share/doc/bind-9.11.4/sample/etc/named.conf /etc/named.conf
 test
 ```
 nslookup www.google.com localhost
-
+nslookup test.domain localhost
 nslookup localhost localhost
+```
+
+change local dns at /etc/resolv.conf
+test
+```
+nslookup www.google.com
+nslookup test.domain
+nslookup localhost
+nslookup 172.16.1.2
 ```
