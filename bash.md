@@ -9,7 +9,7 @@ scp a.b.c:/mnt/jenkins/conf* .
 scp -r <remote-machine>:/mnt/jenkins <destination-dir>
 ```
 
-### word caount without space
+### word count without space
 A file
 
 `tr -d '[:space:] ' < myfile.json | wc`
