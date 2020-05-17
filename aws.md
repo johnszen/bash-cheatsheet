@@ -1,6 +1,6 @@
 # AWS
 
-## aws logs get assume-role
+## aws logs get assume-role usage
 ```
 # get username and role assumed, output result result (queryId in json) to assumerole-query.json 
 # get epoch time from https://www.epochconverter.com/
