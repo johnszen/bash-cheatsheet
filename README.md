@@ -2,6 +2,7 @@
 
 - [git](git.md)
 - [bash](bash.md)
+- [aws](aws.md)
 - [kubectl](kubectl.md)
 - [networking](network.md)
 - [cron](cron.md)
