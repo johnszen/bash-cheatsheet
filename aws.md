@@ -1,5 +1,12 @@
 # AWS
 
+## docker login
+```
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 542640492856.dkr.ecr.us-west-2.amazonaws.com
+
+docker logout 542640492856.dkr.ecr.us-west-2.amazonaws.com
+```
+
 ## aws logs get assume-role usage
 ```
 # get username and role assumed, output result result (queryId in json) to assumerole-query.json 
