@@ -1,5 +1,28 @@
 # AWS
 
+## aws cli
+
+### using profile
+Set access key and secret in ~/.aws/credentials
+```
+...
+[tiing]
+aws_access_key_id = <access key>
+aws_secret_access_key = <secret>
+...
+```
+
+Run command by specifying the profile
+```
+aws --profile tiing --region ap-southeast-2 s3 ls
+```
+
+### using aws-vault
+
+```
+aws-vault exec <role to assume> -- <aws command>
+```
+
 ## docker login
 ```
 aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 542640492856.dkr.ecr.us-west-2.amazonaws.com
