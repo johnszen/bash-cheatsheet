@@ -12,6 +12,14 @@ git merge master
  ```
 
 ## undo last commit in remote master 
+Amend locally and push to remote
+```
+git checkout HEAD^ -- /path/to/file
+git commit -m "..."
+git push
+```
+
+Directly to remote
 `git push -f origin HEAD^:master`
 ## undo last 2 commit in master
 `git push -f origin HEAD^^:master`
