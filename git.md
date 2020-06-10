@@ -3,6 +3,9 @@
 ## clone
 `git clone git@github.com:johnszen/git-cheatsheet.git`
 
+## branch from branch
+`git checkout -b new-branch branch`
+
 ## sync with master
 ```
 git checkout master
