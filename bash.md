@@ -1,5 +1,9 @@
 # bash-cheatsheet
 
+### test ssh key passphrase.
+```
+ssh-keygen -y -f ~/.ssh/id_rsa
+```
 ### copy from remote machine
 ```
 #scp <remote-machine>:<full path to file> <local path>
