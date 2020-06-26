@@ -2,12 +2,6 @@
 
 ## prepare
 
-### test ssh key passphrase.
-
-```
-ssh-keygen -y -f ~/.ssh/id_rsa
-```
-
 ### ssh
 
 ```
