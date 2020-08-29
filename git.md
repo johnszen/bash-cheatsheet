@@ -1,5 +1,11 @@
 # git cheatsheet
 
+## github keep asking for password
+(for Mac) Passphrase stored in keychain may be lost, re-add.
+```
+ssh-add ~/.ssh/id_rsa
+```
+
 ## clone
 `git clone git@github.com:johnszen/git-cheatsheet.git`
 
