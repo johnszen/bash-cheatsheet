@@ -3,6 +3,7 @@
 - [git](git.md)
 - [bash](bash.md)
 - [aws](aws.md)
+- [go](golang.md)
 - [kubectl](kubectl.md)
 - [networking](network.md)
 - [cron](cron.md)
