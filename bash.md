@@ -1,5 +1,10 @@
 # bash-cheatsheet
 
+### xargs
+```
+ls -1 | xargs -I% wc %
+```
+
 ### test ssh key passphrase.
 ```
 ssh-keygen -y -f ~/.ssh/id_rsa
