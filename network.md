@@ -3,6 +3,9 @@
 ## Common commands
 
 ```
+# is port open
+nc -z <host> <port>
+
 nslookup <damain-name>
 #reverse lookup
 nslookup <ip>
@@ -17,6 +20,9 @@ dig
 
 # list routing rules
 iptables
+
+# http return response
+response=$(curl --write-out '%{http_code}' --silent --output /dev/null servername)
 ```
 
 Display resolver cache - current name to ip list
