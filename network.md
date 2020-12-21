@@ -20,13 +20,26 @@ dig
 
 # list routing rules
 iptables
-
-# http return response
-response=$(curl --write-out '%{http_code}' --silent --output /dev/null servername)
 ```
 
 Display resolver cache - current name to ip list
 `ipconfig /displaydns`
+
+Traceroute
+`traceroute google.com`
+
+## curl
+```
+# to get source address
+curl ipinfo.io
+
+# http return response
+response=$(curl --write-out '%{http_code}' --silent --output /dev/null servername)
+
+# post
+curl -X POST ...
+```
+
 
 ## Name lookup
 `nslookup www.google.com`
@@ -63,3 +76,4 @@ Reverse lookup
   - look for next level domain name e.g. com (iana.org)
   - look for next level domain name e.g. google (verisign)
   - ...
+
