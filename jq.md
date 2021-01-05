@@ -18,7 +18,7 @@
 Pipe to length to get match count
 `.Parameters | map(select(any(.Type; . == "String"))) | length`
 Input
-```
+```json
 {
   "Parameters": [
     {
@@ -54,3 +54,46 @@ Output
 
 ## combine files
 `jq -s '{ Parameters: map(.Parameters[]) }' .work/tmp_"${p_filename}"*.json`
+
+## make two elements value become {value1: value2}
+`.TagList |  map ( { (."Key") : .Value } ) | add`
+
+Input
+``` json
+{
+"TagList": [
+        {
+            "Key": "Cost Center",
+            "Value": "Solutions"
+        },
+        {
+            "Key": "Project Team",
+            "Value": "Internal Systems"
+        },
+        {
+            "Key": "Project Service",
+            "Value": "captain"
+        },
+        {
+            "Key": "MakeSnapshot-KeepCount",
+            "Value": "7"
+        },
+        {
+            "Key": "MakeSnapshot",
+            "Value": "True"
+        }
+    ]
+}
+```
+
+```json
+{
+  "Cost Center": "Solutions",
+  "Project Team": "Internal Systems",
+  "Project Service": "captain",
+  "MakeSnapshot-KeepCount": "7",
+  "MakeSnapshot": "True"
+}
+```
+
+
