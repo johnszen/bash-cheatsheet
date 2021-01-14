@@ -2,6 +2,7 @@
 
 Copy dependency library to local project
 ```
+# go mod init [project name] - create an index file
 go mod init
 go mod vendor
 ```
