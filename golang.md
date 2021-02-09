@@ -9,7 +9,10 @@ go mod vendor
 
 Update or .. - get the package again
 ```
-# go get github.com/...
+# list all may need update
+go list -u -m all
+
+# go get github.com/..., -u for all sub-dependencies
 go get -u github.com/vend/config
 ```
 
