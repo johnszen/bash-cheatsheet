@@ -10,8 +10,10 @@
 - [cron](cron.md)
 - [bind](bind.md)
 
+- [links](links.md)
+
 ## volume
 - [volume](redhat-volume.md)
 - [Extend logical volume manager (LVM) partition on Centos](centos-lvm-extend.md)
 
-- [links](links.md)
+
