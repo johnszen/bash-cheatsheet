@@ -2,6 +2,7 @@
 
 - [git](git.md)
 - [bash](bash.md)
+- [chef](chef.md)
 - [aws](aws.md)
 - [go](golang.md)
 - [jq](jq.md)
