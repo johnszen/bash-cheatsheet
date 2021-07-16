@@ -1,6 +1,12 @@
 # Chef
 ### Common commands
 ```bash
+# generate a cookbook dir
+chef generate cookbook <name>
+
+# generate a repo
+chef generate repo <name>
+
 # list nodes
 kitchen list
 
