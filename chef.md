@@ -2,10 +2,14 @@
 ### Common commands
 ```bash
 # generate a cookbook dir; -P to generate Policyfile.rb also
-chef generate cookbook <name> [-P]
+# Policyfile.rb specifies how cookbooks to be run
+chef generate cookbook <dir-name> [-P]
+
+# generate attributes for a cookbook
+chef generate attribute <dir-name> <filename>
 
 # generate a repo
-chef generate repo <name>
+chef generate repo <dir-name>
 
 # list nodes
 kitchen list
