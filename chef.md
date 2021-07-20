@@ -1,8 +1,8 @@
 # Chef
 ### Common commands
 ```bash
-# generate a cookbook dir
-chef generate cookbook <name>
+# generate a cookbook dir; -P to generate Policyfile.rb also
+chef generate cookbook <name> [-P]
 
 # generate a repo
 chef generate repo <name>
