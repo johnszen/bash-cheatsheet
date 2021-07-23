@@ -13,12 +13,17 @@ ssh-add ~/.ssh/id_rsa
 `git checkout -b new-branch branch`
 
 ## sync with master
-```
+```bash
 git checkout master
 git pull
 git checkout <branch>
 git merge master
  ```
+
+## move 2 commit back in current branch
+```bash
+git reset HEAD~2
+```
 
 ## undo last commit in remote master 
 Amend locally and push to remote
@@ -33,13 +38,13 @@ Directly to remote
 ## undo last 2 commit in master
 `git push -f origin HEAD^^:master`
 OR
-```
+```bash
 git revert <commit-id>
 git push -f
 ```
 
 ## undo last local commit and keep file changes
-```
+```bash
 # check commit log
 git log
 
@@ -58,7 +63,7 @@ You can get a list of all the deleted files in the working tree using the comman
 `git ls-files --deleted`
 
 If the deletion has been committed, find the commit where it happened, then recover the file from this commit.
-```
+```bash
 git rev-list -n 1 HEAD -- <file>
 git checkout <commit>^ -- <file>
 ```
