@@ -25,6 +25,12 @@ git merge master
 git reset HEAD~2
 ```
 
+## revert changes
+```bash
+# add a commit undoing the change to last 2 commits in current branch in local
+git revert HEAD~2
+```
+
 ## undo last commit in remote master 
 Amend locally and push to remote
 ```
@@ -39,7 +45,9 @@ Directly to remote
 `git push -f origin HEAD^^:master`
 OR
 ```bash
+# add a commit to undo the change in the commit in local
 git revert <commit-id>
+# force push to server
 git push -f
 ```
 
