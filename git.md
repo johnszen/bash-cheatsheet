@@ -2,7 +2,8 @@
 
 ## github keep asking for password
 (for Mac) Passphrase stored in keychain may be lost, re-add.
-```
+```bash
+eval `ssh-agent`
 ssh-add ~/.ssh/id_rsa
 ```
 
