@@ -1,6 +1,10 @@
 # Network
 
 ## Common commands
+Is port open
+```bash
+timeout 5 bash -c "</dev/tcp/10.1.2.3/443" && echo open || echo port closed
+```
 
 ```
 # is port open
